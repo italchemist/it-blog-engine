@@ -157,6 +157,7 @@ DEPENDENCIES
   capistrano
   coderay
   coffee-rails (~> 3.2.1)
+  execjs
   git
   haml-rails
   inherited_resources
