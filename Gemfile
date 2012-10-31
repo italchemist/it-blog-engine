@@ -20,6 +20,7 @@ end
 
 group :production do
   gem 'mysql'
+  gem 'unicorn'
 end
 
 gem 'jquery-rails'
