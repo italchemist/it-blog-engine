@@ -157,11 +157,12 @@ DEPENDENCIES
   capistrano
   coderay
   coffee-rails (~> 3.2.1)
-  execjs
   git
   haml-rails
   inherited_resources
   jquery-rails
+  less
+  libv8
   mysql
   nokogiri
   rails (= 3.2.8)
