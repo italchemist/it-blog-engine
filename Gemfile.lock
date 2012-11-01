@@ -105,6 +105,8 @@ GEM
       activesupport (= 3.2.8)
       bundler (~> 1.0)
       railties (= 3.2.8)
+    rails_config (0.3.1)
+      activesupport (>= 3.0)
     railties (3.2.8)
       actionpack (= 3.2.8)
       activesupport (= 3.2.8)
@@ -156,11 +158,10 @@ DEPENDENCIES
   haml-rails
   inherited_resources
   jquery-rails
-  less
-  libv8
   mysql
   nokogiri
   rails (= 3.2.8)
+  rails_config
   redcarpet
   sqlite3
   therubyracer

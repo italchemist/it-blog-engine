@@ -30,6 +30,7 @@ gem 'coderay'
 gem 'nokogiri'
 gem 'inherited_resources'
 gem 'git'
+gem "rails_config"
 
 #gem 'libv8'
 #gem 'less'
