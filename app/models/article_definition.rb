@@ -33,22 +33,7 @@ class ArticleDefinition
   end
 
   def process_content(text)
-    # process markdown
-    renderer = Redcarpet::Render::HTML.new(
-    	:filter_html => true)
-    markdown = Redcarpet::Markdown.new(renderer,
-    	:autolink => true, :space_after_headers => true,
-    	:fenced_code_blocks => true)
-    @content = markdown.render(text)
-
-    # syntax highlight
-    doc = Nokogiri::HTML(@content)
-    doc.search("pre > code[class]").each do |pre|
-      code     = CodeRay.scan(pre.text.rstrip, pre[:class]).div
-      code_doc = Nokogiri::HTML(code)
-      pre.replace code_doc.css(".code").to_html
-    end
-    @content = doc.to_s
+    @content = MarkdownLogics.render(text)
   end
 
   def process_tag(tag, value)

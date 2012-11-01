@@ -30,9 +30,9 @@ gem 'coderay'
 gem 'nokogiri'
 gem 'inherited_resources'
 gem 'git'
-gem 'therubyracer', :platforms => :ruby
-gem 'libv8'
-gem 'less'
+
+#gem 'libv8'
+#gem 'less'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

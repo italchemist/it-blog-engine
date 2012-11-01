@@ -3,8 +3,7 @@ class CreateArticles < ActiveRecord::Migration
     create_table :articles do |t|
       t.string :title
       t.text :content
-
-      t.timestamps
+      t.date :date
     end
   end
 end

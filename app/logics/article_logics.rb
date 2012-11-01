@@ -6,9 +6,9 @@ class ArticleLogics
       article = Article.new()
       article.title = definition.title
       article.content = definition.content
+      article.date = definition.date
       article
     rescue
-      puts "ERROR: " + definition
       nil # something goes wrong
     end
   end
