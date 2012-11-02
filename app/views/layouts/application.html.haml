@@ -25,12 +25,11 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand(href="#") Itblog
-          /.container.nav-collapse
-          /%ul.nav
-          /%li= link_to "Link 1", "/path1"
-          /%li= link_to "Link 2", "/path2"
-          /s%li= link_to "Link 3", "/path3"
+          %a.brand(href=root_path) IT Alchemist Blog
+          .container.nav-collapse
+            %ul.nav
+              %li= link_to "Articles", root_path
+              %li= link_to "Projects", projects_path
 
     .container-fluid
       = yield

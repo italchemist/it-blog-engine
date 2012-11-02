@@ -13,4 +13,16 @@ class ArticleLogics
       nil # something goes wrong
     end
   end
+
+  def self.publish(article)
+    false if article == nil
+    
+    article.save
+
+    ba = BlogArticle.new()
+    ba.article_id = article.id
+    ba.save
+    
+    true
+  end
 end

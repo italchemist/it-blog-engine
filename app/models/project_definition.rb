@@ -1,10 +1,10 @@
-class ArticleDefinition
+class ProjectDefinition
   attr_reader :id
-  attr_reader :title
-  attr_reader :content
-  attr_reader :tags
+  attr_reader :name
   attr_reader :date
+  attr_reader :content
   attr_reader :published
+
 
   # initializes new instance of te article
   # definition using specified data
@@ -38,8 +38,7 @@ class ArticleDefinition
 
   def process_tag(tag, value)
     @id = value if tag == "id"
-    @title = value if tag == "title"
-    @tags = value.split(",").map{ |tag| tag.strip } if tag == "tags"
+    @name = value if tag == "name"
     @date = value if tag == "date"
     @published = value if tag == "published"
   end
