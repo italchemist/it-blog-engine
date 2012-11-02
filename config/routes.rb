@@ -1,5 +1,5 @@
 Itblog::Application.routes.draw do
-
+  resources :article, :only => [:show]
   match 'admin/update' => 'admin#update'
   root :to => 'home#index'
   

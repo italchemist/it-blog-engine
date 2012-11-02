@@ -4,6 +4,7 @@ class CreateArticles < ActiveRecord::Migration
       t.string :title
       t.text :content
       t.date :date
+      t.string :permalink
     end
   end
 end

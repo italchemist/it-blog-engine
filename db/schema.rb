@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20121031121401) do
     t.string "title"
     t.text   "content"
     t.date   "date"
+    t.string "permalink"
   end
 
 end

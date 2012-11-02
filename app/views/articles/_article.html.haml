@@ -1,4 +1,13 @@
+- show_title = true if local_assigns[:show_title].nil?
+- show_comments = false if local_assigns[:show_comments].nil?
+
 %article
   %header
-    %h1= article.title
+    =link_to article.title, article
   %p= raw article.content
+
+
+%div.comments
+  - if show_comments
+    %hr
+      %div#disqus_thread
