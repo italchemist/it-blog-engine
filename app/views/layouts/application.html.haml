@@ -25,7 +25,9 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand(href=root_path) IT Alchemist Blog
+          %a.brand(href=root_path)
+            IT Alchemist Blog
+            = content_for?(:header) ? ":: " + yield(:header) : ""
           .container.nav-collapse
             %ul.nav
               %li= link_to "Articles", root_path

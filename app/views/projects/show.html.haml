@@ -1,2 +1,5 @@
-/= render @project
-= render @project.articles
+%h1
+- content_for :header do
+  = @project.name
+
+= render @project.articles.order("date ASC"), { :show_project => false }

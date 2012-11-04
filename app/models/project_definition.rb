@@ -2,20 +2,12 @@ class ProjectDefinition
   attr_reader :id
   attr_reader :name
   attr_reader :date
-  attr_reader :content
   attr_reader :published
 
-
   # initializes new instance of te article
-  # definition using specified data
+  # definition using specified definition
   def initialize(definition)
-    delimiter_pos = definition.index("\r\n\r\n")
-    metadata = definition[0..delimiter_pos]
-    content  = definition[delimiter_pos..-1]
-
-  	# process the definition
-    process_metadata(metadata)
-    process_content(content)
+    process_metadata(definition)
   end
 
   private
@@ -30,10 +22,6 @@ class ProjectDefinition
     tag_name  = tag[0..delimiter_pos-1].strip
     tag_value = tag[delimiter_pos+1..-1].strip
     process_tag(tag_name, tag_value)
-  end
-
-  def process_content(text)
-    @content = MarkdownLogics.render(text)
   end
 
   def process_tag(tag, value)

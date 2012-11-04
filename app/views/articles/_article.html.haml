@@ -1,9 +1,16 @@
 - show_title = true if local_assigns[:show_title].nil?
+- show_project = true if local_assigns[:show_project].nil?
 - show_comments = false if local_assigns[:show_comments].nil?
 
 %article
   %header
-    %h1=link_to article.title, article
+    %h1
+      - if show_project
+        - article.projects.each do |p|
+          = link_to p.name, p
+        - if !article.projects.empty?
+          \:
+      %a{ :href=>article_path(article) }= article.title
   %p= raw article.content
 
 

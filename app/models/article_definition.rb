@@ -4,7 +4,8 @@ class ArticleDefinition
   attr_reader :content
   attr_reader :tags
   attr_reader :date
-  attr_reader :published
+  attr_reader :publish_in_blog
+  attr_reader :project_id
 
   # initializes new instance of te article
   # definition using specified data
@@ -41,6 +42,7 @@ class ArticleDefinition
     @title = value if tag == "title"
     @tags = value.split(",").map{ |tag| tag.strip } if tag == "tags"
     @date = value if tag == "date"
-    @published = value if tag == "published"
+    @publish_in_blog = value if tag == "publish_in_blog"
+    @project_id = value if tag == "project"
   end
 end

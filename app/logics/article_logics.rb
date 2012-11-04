@@ -2,7 +2,6 @@ class ArticleLogics
   # Creates article from definition
   def self.create_from_definition(definition)
     begin
-      definition = ArticleDefinition.new(definition)
       article = Article.new()
       article.title = definition.title
       article.content = definition.content
@@ -24,5 +23,9 @@ class ArticleLogics
     ba.save
     
     true
+  end
+
+  def self.attach_to_project(article, project)
+    project.articles << article
   end
 end

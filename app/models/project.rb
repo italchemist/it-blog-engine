@@ -9,6 +9,6 @@ class Project < ActiveRecord::Base
   end
 
   def description
-    articles.first().content
+    articles.order("date asc").first().content
   end
 end
