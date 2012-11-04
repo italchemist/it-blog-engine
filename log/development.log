@@ -47751,3 +47751,2044 @@ ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
 
 
   Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Processing by HomeController#index as HTML
+  [1m[35mBlogArticle Load (0.1ms)[0m  SELECT "blog_articles".* FROM "blog_articles" 
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" IN (95, 96, 97, 98, 99)[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 99
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 98[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 96
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 97[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 95
+  Rendered articles/_article.html.haml (5.3ms)
+  Rendered home/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 18ms (Views: 14.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:39 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:32:40 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" INNER JOIN "project_articles" ON "articles"."id" = "project_articles"."article_id" WHERE "project_articles"."project_id" = 15 ORDER BY date asc LIMIT 1
+  Rendered projects/_project.html.haml (1.9ms)
+  Rendered projects/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:32:46 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/projects/it-blog-engine" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"it-blog-engine"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."permalink" = 'it-blog-engine' LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" INNER JOIN "project_articles" ON "articles"."id" = "project_articles"."article_id" WHERE "project_articles"."project_id" = 15 ORDER BY date ASC
+  Rendered articles/_article.html.haml (0.9ms)
+  Rendered projects/show.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /jquery.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/projects/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:32:47 +0800
+
+ActionController::RoutingError (No route matches [GET] "/projects/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/articles/it-blog-engine-intro" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"it-blog-engine-intro"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."permalink" = 'it-blog-engine-intro' LIMIT 1[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 94
+  Rendered articles/_article.html.haml (2.1ms)
+  Rendered articles/show.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:00 +0800
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/articles/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:33:01 +0800
+
+ActionController::RoutingError (No route matches [GET] "/articles/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/articles/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:33:01 +0800
+
+ActionController::RoutingError (No route matches [GET] "/articles/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/articles/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:33:01 +0800
+
+ActionController::RoutingError (No route matches [GET] "/articles/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/projects/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:33:03 +0800
+
+ActionController::RoutingError (No route matches [GET] "/projects/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Processing by HomeController#index as HTML
+  [1m[36mBlogArticle Load (0.1ms)[0m  [1mSELECT "blog_articles".* FROM "blog_articles" [0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" IN (95, 96, 97, 98, 99)
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 99[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 98
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 96[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 97
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 95[0m
+  Rendered articles/_article.html.haml (5.2ms)
+  Rendered home/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:10 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:11 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:11 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:11 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:11 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:11 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:11 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:11 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:11 +0800
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:33:11 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Processing by HomeController#index as HTML
+  [1m[35mBlogArticle Load (0.1ms)[0m  SELECT "blog_articles".* FROM "blog_articles" 
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" IN (95, 96, 97, 98, 99)[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 99
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 98[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 96
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 97[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 95
+  Rendered articles/_article.html.haml (5.4ms)
+  Rendered home/index.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /article.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:33:15 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" INNER JOIN "project_articles" ON "articles"."id" = "project_articles"."article_id" WHERE "project_articles"."project_id" = 15 ORDER BY date asc LIMIT 1
+  Rendered projects/_project.html.haml (1.8ms)
+  Rendered projects/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:33:20 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/it-blog-engine" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"it-blog-engine"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."permalink" = 'it-blog-engine' LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" INNER JOIN "project_articles" ON "articles"."id" = "project_articles"."article_id" WHERE "project_articles"."project_id" = 15 ORDER BY date ASC
+  Rendered articles/_article.html.haml (0.9ms)
+  Rendered projects/show.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/projects/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:33:22 +0800
+
+ActionController::RoutingError (No route matches [GET] "/projects/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/projects/it-blog-engine" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"it-blog-engine"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."permalink" = 'it-blog-engine' LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" INNER JOIN "project_articles" ON "articles"."id" = "project_articles"."article_id" WHERE "project_articles"."project_id" = 15 ORDER BY date ASC
+  Rendered articles/_article.html.haml (0.9ms)
+  Rendered projects/show.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 18:54:17 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:54:19 +0800
+
+ActionController::RoutingError (No route matches [GET] "/projects/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Processing by HomeController#index as HTML
+  [1m[36mBlogArticle Load (0.1ms)[0m  [1mSELECT "blog_articles".* FROM "blog_articles" [0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" IN (95, 96, 97, 98, 99)
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 99[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 98
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 96[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 97
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 95[0m
+  Rendered articles/_article.html.haml (5.2ms)
+  Rendered home/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /home.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2012-11-04 18:58:18 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Processing by HomeController#index as HTML
+  [1m[35mBlogArticle Load (0.3ms)[0m  SELECT "blog_articles".* FROM "blog_articles" 
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" IN (95, 96, 97, 98, 99)[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 99
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 98[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 96
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 97[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 95
+  Rendered articles/_article.html.haml (5.3ms)
+  Rendered home/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 19:16:53 +0800
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2012-11-04 19:16:54 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Processing by HomeController#index as HTML
+  [1m[36mBlogArticle Load (0.2ms)[0m  [1mSELECT "blog_articles".* FROM "blog_articles" [0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" IN (95, 96, 97, 98, 99)
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 99[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 98
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 96[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 97
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 95[0m
+  Rendered articles/_article.html.haml (14.1ms)
+  Rendered home/index.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 85ms (Views: 78.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/glyphicons-halflings.png" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /twitter/bootstrap/glyphicons-halflings.png - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 21:38:51 +0800
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2012-11-04 21:38:52 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/admin/update" for 127.0.0.1 at 2012-11-04 21:38:56 +0800
+Processing by AdminController#update as HTML
+  [1m[35mSQL (302.9ms)[0m  DELETE FROM "blog_articles"
+  [1m[36mSQL (156.6ms)[0m  [1mDELETE FROM "project_articles"[0m
+  [1m[35mSQL (190.1ms)[0m  DELETE FROM "articles"
+  [1m[36mSQL (156.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "permalink") VALUES (?, ?)[0m  [["name", "it-blog-engine"], ["permalink", "it-blog-engine"]]
+  [1m[35m (142.0ms)[0m  commit transaction
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."permalink" = 'it-blog-engine' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "articles" ("content", "date", "permalink", "title") VALUES (?, ?, ?, ?)[0m  [["content", "<p>Статьи должны быть сохраненны в файл с расширением article. Шаблон файла:</p>\n\n<pre><code>id: permalink\ntitle: Заголовок статьи\ndate: 2012-11-01\nproject: it-blog-engine\n\nТекст статьи идёт после пустой строки.\n</code></pre>\n\n<p>В статье может быть использована разметка:</p>\n\n<pre><code>Заголовок\n=========\n\nЗаголовок второго уровня\n------------------------\n\n*курсив*\n\n* списки\n* списки\n\n1. списки\n2. списки\n</code></pre>\n\n<p>Код выделяется символами ```. Также можно добавить язык программирования для подсветки синтаксиса.</p>\n\n<pre><code>  ``` code ```\n\n  ```ruby puts \"string\"```\n</code></pre>\n\n<p>Как видно, с помощью простых конструкций можно красиво оформить статью без использования визуального редактора.</p>"], ["date", Sun, 04 Nov 2012], ["permalink", "it-blog-engine-article-markup"], ["title", "Разметка статей"]]
+  [1m[35m (159.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "project_articles" ("article_id", "project_id") VALUES (?, ?)  [["article_id", 100], ["project_id", 16]]
+  [1m[36m (196.1ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 3381ms
+
+ArgumentError (bad value for range):
+  app/models/article_definition.rb:14:in `initialize'
+  app/logics/update_logics.rb:40:in `new'
+  app/logics/update_logics.rb:40:in `process_article'
+  app/logics/update_logics.rb:33:in `block in process_definitions'
+  app/logics/update_logics.rb:32:in `each'
+  app/logics/update_logics.rb:32:in `process_definitions'
+  app/logics/update_logics.rb:4:in `update'
+  app/controllers/admin_controller.rb:3:in `update'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/admin/update" for 127.0.0.1 at 2012-11-04 21:39:09 +0800
+Processing by AdminController#update as HTML
+  [1m[35mSQL (167.0ms)[0m  DELETE FROM "blog_articles"
+  [1m[36mSQL (289.4ms)[0m  [1mDELETE FROM "project_articles"[0m
+  [1m[35mSQL (212.4ms)[0m  DELETE FROM "articles"
+  [1m[36mSQL (155.7ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "permalink") VALUES (?, ?)[0m  [["name", "it-blog-engine"], ["permalink", "it-blog-engine"]]
+  [1m[35m (141.6ms)[0m  commit transaction
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."permalink" = 'it-blog-engine' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "articles" ("content", "date", "permalink", "title") VALUES (?, ?, ?, ?)[0m  [["content", "<p>Статьи должны быть сохраненны в файл с расширением article. Шаблон файла:</p>\n\n<pre><code>id: permalink\ntitle: Заголовок статьи\ndate: 2012-11-01\nproject: it-blog-engine\n\nТекст статьи идёт после пустой строки.\n</code></pre>\n\n<p>В статье может быть использована разметка:</p>\n\n<pre><code>Заголовок\n=========\n\nЗаголовок второго уровня\n------------------------\n\n*курсив*\n\n* списки\n* списки\n\n1. списки\n2. списки\n</code></pre>\n\n<p>Код выделяется символами ```. Также можно добавить язык программирования для подсветки синтаксиса.</p>\n\n<pre><code>  ``` code ```\n\n  ```ruby puts \"string\"```\n</code></pre>\n\n<p>Как видно, с помощью простых конструкций можно красиво оформить статью без использования визуального редактора.</p>"], ["date", Sun, 04 Nov 2012], ["permalink", "it-blog-engine-article-markup"], ["title", "Разметка статей"]]
+  [1m[35m (170.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "project_articles" ("article_id", "project_id") VALUES (?, ?)  [["article_id", 101], ["project_id", 17]]
+  [1m[36m (185.1ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 3089ms
+
+ArgumentError (bad value for range):
+  app/models/article_definition.rb:14:in `initialize'
+  app/logics/update_logics.rb:40:in `new'
+  app/logics/update_logics.rb:40:in `process_article'
+  app/logics/update_logics.rb:33:in `block in process_definitions'
+  app/logics/update_logics.rb:32:in `each'
+  app/logics/update_logics.rb:32:in `process_definitions'
+  app/logics/update_logics.rb:4:in `update'
+  app/controllers/admin_controller.rb:3:in `update'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/admin/update" for 127.0.0.1 at 2012-11-04 21:39:23 +0800
+Processing by AdminController#update as HTML
+  [1m[35mSQL (178.0ms)[0m  DELETE FROM "blog_articles"
+  [1m[36mSQL (189.5ms)[0m  [1mDELETE FROM "project_articles"[0m
+  [1m[35mSQL (177.5ms)[0m  DELETE FROM "articles"
+  [1m[36mSQL (200.3ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "permalink") VALUES (?, ?)[0m  [["name", "it-blog-engine"], ["permalink", "it-blog-engine"]]
+  [1m[35m (175.1ms)[0m  commit transaction
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."permalink" = 'it-blog-engine' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("content", "date", "permalink", "title") VALUES (?, ?, ?, ?)[0m  [["content", "<p>Статьи должны быть сохраненны в файл с расширением article. Шаблон файла:</p>\n\n<pre><code>id: permalink\ntitle: Заголовок статьи\ndate: 2012-11-01\nproject: it-blog-engine\n\nТекст статьи идёт после пустой строки.\n</code></pre>\n\n<p>В статье может быть использована разметка:</p>\n\n<pre><code>Заголовок\n=========\n\nЗаголовок второго уровня\n------------------------\n\n*курсив*\n\n* списки\n* списки\n\n1. списки\n2. списки\n</code></pre>\n\n<p>Код выделяется символами ```. Также можно добавить язык программирования для подсветки синтаксиса.</p>\n\n<pre><code>  ``` code ```\n\n  ```ruby puts \"string\"```\n</code></pre>\n\n<p>Как видно, с помощью простых конструкций можно красиво оформить статью без использования визуального редактора.</p>"], ["date", Sun, 04 Nov 2012], ["permalink", "it-blog-engine-article-markup"], ["title", "Разметка статей"]]
+  [1m[35m (228.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "project_articles" ("article_id", "project_id") VALUES (?, ?)  [["article_id", 102], ["project_id", 18]]
+  [1m[36m (192.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("content", "date", "permalink", "title") VALUES (?, ?, ?, ?)[0m  [["content", "<h2>Получение почты</h2>\n\n<p>Для получения почты будем использовать <em>getmail</em>. Установим его:</p>\n\n<pre><code>sudo pacman -S getmail\nmkdir ~/.getmail\nnano ~/.getmail/getmailrc\n</code></pre>\n\n<p>В файл настроек вставим следующий текст:</p>\n\n<pre><code>[retriever]\ntype = SimpleIMAPRetriever\nserver = imap.locum.ru\nport = 143\nusername = me@domain.org\npassword = my_password\n\n[destination]\ntype = Maildir\npath = ~/.mail/\n\n[options]\ndelete = true\nmessage_log = ~/.getmail/log-foreman-example\n</code></pre>\n\n<p>В качестве <em>retriever/type</em> можно использовать следующее (в зависимости от препочтений и настроек сервера):</p>\n\n<ul>\n<li>SimpleSMTPRetriever</li>\n<li>SimpleSMTPSSLRetriever</li>\n<li>полный список: <a href=\"http://pyropus.ca/software/getmail/configuration.html#conf-retriever\">http://pyropus.ca/software/getmail/configuration.html#conf-retriever</a>\n</li>\n</ul>\n<p>Также следует указать порт, почту и пароль. Проверить работу можно выполнив:</p>\n\n<pre><code>$ getmail\ngetmail version 4.35.0\nCopyright (C) 1998-2012 Charles Cazabon.  Licensed under the GNU GPL version 2.\nSimpleIMAPRetriever:me@italchemist.org@imap.locum.ru:143:\n  0 messages (0 bytes) retrieved, 0 skipped\n</code></pre>\n\n<h2>Отправка почты</h2>\n\n<p>Установим <em>msmtp</em>:</p>\n\n<pre><code>sudo pacman -S msmtp\nnano ./.msmtprc\n</code></pre>\n\n<p>В файл конфигурации вставим следующий текст:</p>\n\n<pre><code># Accounts will inherit settings from this section\ndefaults\nauth             on\ntls              on\ntls_trust_file   /usr/share/ca-certificates/mozilla/Thawte_Premium_Server_CA.crt\n\n# A first gmail address\naccount        gmail\nhost           smtp.gmail.com\nport           587\nfrom           username@gmail.com\nuser           username@gmail.com\npassword       password\ntls_trust_file /etc/ssl/certs/ca-certificates.crt\n\n# A freemail service\naccount    freemail\nhost       smtp.freemail.example\nfrom       joe_smith@freemail.example\nuser       joe.smith\npassword   secret\n\n# Set a default account\naccount default : gmail\n</code></pre>\n\n<p>Нужно исправить под свои логин/пароль. После сохранения файла установим права, иначе <em>msmtp</em> не будет работать:</p>\n\n<pre><code>chmod 600 ~/.msmtprc\n</code></pre>\n\n<p>Проверим работу:</p>\n\n<pre><code>msmtp -a account send_to@domain.ru\nfrom:bill.gates@microsoft.com\nsubject:win8\n\nDid you see that? I'm on your side now. ArchLinux is awesome.\n</code></pre>\n\n<p>На <em><a href=\"mailto:send_to@domain.ru\">send_to@domain.ru</a></em> должно прийти письмо.</p>\n\n<h2>Настройка Mutt</h2>\n\n<p>Установим <em>mutt</em>:</p>\n\n<pre><code>sudo pacman -S mutt\nnano ./.muttrc\n</code></pre>\n\n<p>В файл конфигурации вставим следующий текст:</p>\n\n<pre><code>set mbox_type=maildir\nset folder=$HOME/.mail\nset spoolfile=+/\nset header_cache=~/.hcache\nset sendmail=\"/usr/bin/msmtp\"\nset from=\"me@domain.org\"\n</code></pre>\n\n<p>Тут указывается что почта будет отправляться посредством <em>msmtp</em>, папка для почты <em>~/.mail/</em> и адрес отправителя.</p>\n\n<p>Нужно создать нескоько папок, где будет храниться почта:</p>\n\n<pre><code>mkdir -p ~/mail/{cur,new,tmp}\n</code></pre>\n\n<h2>Всё вместе</h2>\n\n<p>Получим почту и откроем <em>mutt</em>:</p>\n\n<pre><code>getmail\nmutt\n</code></pre>\n\n<p>Должны увидеть все полученные письма. Для создания и отправки писма нужно нажать <em>m</em>. Далее соедовать инструкции.</p>\n\n<h2>Автоматическое получение писем</h2>\n\n<p>Добавим новую задачу в crontab:</p>\n\n<pre><code>crontab -e\n</code></pre>\n\n<p>Нужно вставить такую строку</p>\n\n<pre><code>*/10 * * * * /usr/bin/getmail\n</code></pre>\n\n<p>Теперь <em>getmail</em> бует запускаться каждые 10 минут.</p>"], ["date", Mon, 05 Nov 2012], ["permalink", "archlinux-mutt-getmail-msmtp"], ["title", "Настройка почты с Mutt в ArchLinux"]]
+  [1m[35m (157.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blog_articles" ("article_id") VALUES (?)  [["article_id", 103]]
+  [1m[36m (153.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."permalink" = 'it-blog-engine' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "articles" ("content", "date", "permalink", "title") VALUES (?, ?, ?, ?)  [["content", "<p>Движок для блога написанный с <em>Ruby on Rails</em>. Основные особенности:</p>\n\n<ul>\n<li>Поддержка блога/портфолио.</li>\n<li>Статьи пишутся в markdown.</li>\n<li>Все статьи должны хранится и извлекатются для обработки из <em>github</em> репозитария.</li>\n<li>Обновление статей должно выполняется посредством нажатия одной кнопки \"Обновить\".</li>\n<li>Никакой дополнительный софт, кроме системы контроля версий не требуется.</li>\n</ul>"], ["date", Sat, 03 Nov 2012], ["permalink", "it-blog-engine-intro"], ["title", "Обзор"]]
+  [1m[36m (160.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "project_articles" ("article_id", "project_id") VALUES (?, ?)[0m  [["article_id", 104], ["project_id", 18]]
+  [1m[35m (163.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "articles" ("content", "date", "permalink", "title") VALUES (?, ?, ?, ?)  [["content", "<p>Доброго <em>DateTime.Now()</em>!</p>\n\n<p>Приветствую вас в лаборатории <em>IT</em> алхимика. Здесь я буду рассказывать об всяких интересных <em>IT</em> штуках, как то: программирование, инструменты разработчика, разработка игр и прочее.</p>\n\n<p>Добро пожаловать!</p>"], ["date", Tue, 23 Oct 2012], ["permalink", "hello-world"], ["title", "Hello World!"]]
+  [1m[36m (197.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blog_articles" ("article_id") VALUES (?)[0m  [["article_id", 105]]
+  [1m[35m (275.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("content", "date", "permalink", "title") VALUES (?, ?, ?, ?)  [["content", "<p>Доброго времени суток!</p>\n\n<p>Терминал является очень нужной штукой, это и так все знают. Однако, не все настраивают под свои нужды. Этим сейчас и займёмся. Настраивать, естественно, будем <em>zsh</em>.</p>\n\n<h2>Установка ZSH</h2>\n\n<p>Для начала установим <em>oh my zsh</em> - разрабатываемый сообществом фреймвёрк для настройки zsh. Включает более 40+ плагинов (<em>rails</em>, <em>git</em>, <em>OSX</em>, <em>hub</em>, <em>capistrano</em>, <em>brew</em>, <em>ant</em>, <em>macports</em>, и другие), более 80 тем, и систему обновления для того чтобы поддерживать скрипты в актуальном состоянии. Хостится на гитхабе: <a href=\"https://github.com/robbyrussell/oh-my-zsh\">https://github.com/robbyrussell/oh-my-zsh</a></p>\n\n<p>Устанавливаем согласно инструкции: (на сайте предложены различные варианты установки, включая ручной)</p>\n\n<pre><code>wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh\n</code></pre>\n\n<p>Теперь включим необходимые плагины, отредактировав ./.zshrc:</p>\n\n<pre><code>plugins=(git rails ruby)\n</code></pre>\n\n<p>На этом базовая настройка закончена, что уже даёт огромное количество возможностей. Однако, перейдём к созданию своего собственной конфигурации.</p>\n\n<h2>Свой плагин для ZSH</h2>\n\n<p>Файл будет загружен автоматиески если просто поместить его в <em>~/.oh-my-zsh/custom</em>. Однако если нужно создать плагин, то структура должна быть такой: <em>~/.oh-my-zsh/custom/\#{plugin<em>name}/\#{plugin</em>name}.plugin.zsh</em></p>\n\n<p>Я создам плагин <em>cd-to-project</em>, который будет выполнять <em>cd</em> до директории с проектом. Так выглядит плагин (<em>~/.oh-my-zsh/custom/cd-to-project/cd-to-project.plugin.zsh</em>):</p>\n\n<pre>prj() { cd ~/Projects/$1; }\n_prj() { _files -W ~/Projects -/; }\ncompdef _prj prj</pre>\n\n<p>Первая строка объявляет комманду <em>prj</em> и её действие. Вторая строка - предоставление автодополнения. Всё что вернёт эта функция будет предложено для автодополнения. Третья строка указывает какой команде какая функция атодополнения соответствует.</p>\n\n<p>Теперь нужно добавить плагин в <em>.zshrc</em></p>\n\n<pre><code>plugins=(git cd-to-project)\n</code></pre>\n\n<p>После перезапуска терминала данный плагин будет работать. Нужно набрать <em>prj</em>, пробел и нажать <em>tab</em> два раза для автодополнения.</p>\n\n<p>Вот ещё несколько полезных функций:</p>\n\n<pre><code>cdl() { cd $1 &amp;&amp; ls }\nmkcd() { mkdir $1 &amp;&amp; cd $1 }\n</code></pre>\n\n<p>Данная функция извлекает архив любого типа:</p>\n\n<pre><code>extract () {\n if [ -f $1 ] ; then\n case $1 in\n *.tar.bz2)   tar xjf $1    ;;\n *.tar.gz)    tar xzf $1    ;;\n *.bz2)       bunzip2 $1    ;;\n *.rar)       unrar x $1    ;;\n *.gz)        gunzip $1     ;;\n *.tar)       tar xf $1     ;;\n *.tbz2)      tar xjf $1    ;;\n *.tbz)       tar -xjvf $1  ;;\n *.tgz)       tar xzf $1    ;;\n *.zip)       unzip $1      ;;\n *.Z)         uncompress $1 ;;\n *.7z)        7z x $1       ;;\n *)           echo \"I don't know how to extract '$1'...\" ;;\n esac\n else\n echo \"'$1' is not a valid file\"\n fi\n} \n</code></pre>\n\n<p>Также можно устанавливать алиасы на команды:</p>\n\n<pre><code>alias ls='ls --classify --color --human-readable --group-directories-first'\nalias s='sudo'\n</code></pre>\n\n<p>Также можно настроить приложение которое будет открывать файлы по типу расширения</p>\n\n<pre><code>alias -s txt=nano\n</code></pre>\n\n<p>Таким образом zsh очень легко конфигурируется под свои нужды.</p>"], ["date", Fri, 02 Nov 2012], ["permalink", "zsh-configuration"], ["title", "ZSH"]]
+  [1m[36m (225.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "blog_articles" ("article_id") VALUES (?)[0m  [["article_id", 106]]
+  [1m[35m (153.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "articles" ("content", "date", "permalink", "title") VALUES (?, ?, ?, ?)  [["content", "<p>Давайте поговорим о блоговых движках для <em>IT</em> профессионала. Каким он должен быть? Как мне кажется, он должен удовлетворять следующим критериям:</p>\n\n<ul>\n<li>Статьи пишутся в <em>markdown</em>. Никаких <em>wysiwyg</em>, ибо вставлять и редактировать код с такой концепцией крайне тяжело. Кто пробовал делать это, например в <em>wordpress</em> поймёт.</li>\n<li>Web-интерфейс для создания/редактирования статей как таковой не нужен. Достаточно простого <em>off-line</em> редактора текста.</li>\n<li>Все статьи должны храниться и извлекаться для обработки из репозитария. Например на <em>github.com</em>. Таким образом, достигается архивирование статей и их версионность.</li>\n<li>Обновление статей должно выполняться посредством нажатия одной кнопки \"Обновить\", что инициирует процесс выгрузки статей из репозитария и обновления их в <em>БД</em>.</li>\n<li>Никакой дополнительный софт, кроме системы контроля версий не должен требоваться.</li>\n</ul>\n<p>Поискав в сети движки, удовлетворяющие предложенным критериям, пришёл к выводу, что таких нет. Вот некоторые из кандидатов:</p>\n\n<ul>\n<li>\n<a href=\"http://octopress.org/\">http://octopress.org/</a> - требует <em>ruby</em> на стороне клиента.</li>\n<li>\n<a href=\"https://github.com/natew/obtvse\">https://github.com/natew/obtvse</a> - нет интеграции с системой контроля версий.</li>\n<li>И множество других, включая статически движки.</li>\n</ul>\n<p>Таким образом было принято решение, написать свой блоговый движок, который бы удовлетворял всем предложенным требованиям. Итак, вот он: <a href=\"https://github.com/italchemist/it-blog-engine\">https://github.com/italchemist/it-blog-engine</a></p>\n\n<p>Собственно, именно на этом движке и работает сей блог. Таким образом, для примера, выглядит данная статья:</p>\n\n<pre><code>title: IT Blog Engine!\ndate: 2012-11-01\nid: it-blog-engine-intro\n\nТекст статьи.\n...\n</code></pre>\n\n<p>Приятного использования! Я буду публиковать статьи с новостями о данном проекте. Однако, все их можно увидеть на странице <a href=\"http://italchemist.org/projects/it-blog-engine\">http://italchemist.org/projects/it-blog-engine</a> </p>"], ["date", Thu, 01 Nov 2012], ["permalink", "it-blog-engine-intro"], ["title", "IT Blog Engine - markdown, github, движок для блогов"]]
+  [1m[36m (208.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "blog_articles" ("article_id") VALUES (?)[0m  [["article_id", 107]]
+  [1m[35m (168.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("content", "date", "permalink", "title") VALUES (?, ?, ?, ?)  [["content", "<p>Рассмотрим работу с сетью в <em>haxe</em> и <em>flash</em>. Код достаточно прост:</p>\n\n<pre><span style=\"color:#777\">// Создать сокет и подключиться</span>\n<span style=\"color:#080;font-weight:bold\">var</span> c:Socket = <span style=\"color:#080;font-weight:bold\">new</span> Socket();\nc.connect(<span style=\"background-color:hsla(0,100%,50%,0.05)\"><span style=\"color:#710\">\"</span><span style=\"color:#D20\">127.0.0.1</span><span style=\"color:#710\">\"</span></span>, <span style=\"color:#00D\">9000</span>);</pre>\n\n<p>Поскольку у сокетов на стороне <em>flash</em> нет простого метода <code>writeString</code>, но имеется <code>writeUTF</code>, который не может быть использован, поскольку текущая версия сервера с предыдущей статьи не поддерживает <em>UTF</em> строки. Поэтому реализуем свою функцию записи простой строки в сокет:</p>\n\n<pre><span style=\"color:#080;font-weight:bold\">public</span> <span style=\"color:#080;font-weight:bold\">function</span> <span style=\"color:#06B;font-weight:bold\">writeString</span>(text:String,<span style=\"color:#606\">c</span>:Socket) {\n  <span style=\"color:#777\">// Записать строку по байту.</span>\n  <span style=\"color:#080;font-weight:bold\">for</span> (i <span style=\"color:#080;font-weight:bold\">in</span> <span style=\"color:#00D\">0</span>...text.length) {\n    c.writeByte(StringTools.fastCodeAt(text, i));\n  }\n\n  <span style=\"color:#777\">// Записать символ конца строки.</span>\n  c.writeByte(<span style=\"color:#00D\">13</span>);\n  c.writeByte(<span style=\"color:#00D\">10</span>);\n}</pre>\n\n<p>А теперь выполним запись строк в сокет.</p>\n\n<pre>writeString(<span style=\"background-color:hsla(0,100%,50%,0.05)\"><span style=\"color:#710\">\"</span><span style=\"color:#D20\">test 1</span><span style=\"color:#710\">\"</span></span>, c);\nwriteString(<span style=\"background-color:hsla(0,100%,50%,0.05)\"><span style=\"color:#710\">\"</span><span style=\"color:#D20\">second line</span><span style=\"color:#710\">\"</span></span>, c);\nwriteString(<span style=\"background-color:hsla(0,100%,50%,0.05)\"><span style=\"color:#710\">\"</span><span style=\"color:#D20\">one more line</span><span style=\"color:#710\">\"</span></span>, c);\n\n<span style=\"color:#777\">// Эта строка завершит работу сервера.</span>\nwriteString(<span style=\"background-color:hsla(0,100%,50%,0.05)\"><span style=\"color:#710\">\"</span><span style=\"color:#D20\">q</span><span style=\"color:#710\">\"</span></span>, c);</pre>\n\n<p>Теперь нужно запустить сервер, а после этого запустить клиент.</p>"], ["date", Sat, 03 Nov 2012], ["permalink", "haxe-flash-socket-client"], ["title", "Haxe Flash Socket Client"]]
+  [1m[36m (174.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "blog_articles" ("article_id") VALUES (?)[0m  [["article_id", 108]]
+  [1m[35m (175.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("content", "date", "permalink", "title") VALUES (?, ?, ?, ?)  [["content", "<p>Рассмотрим работу с сетью в <em>haxe</em>. Для начала установим инструменты для нативной разработки:</p>\n\n<pre><code>nme setup windows\n</code></pre>\n\n<p>Теперь можно компилировать нативные приложения под <em>windows</em>. </p>\n\n<pre> <span style=\"color:#777\">// Используем этот адрес, чтобы слушать на всех интерфейсах</span>\n<span style=\"color:#080;font-weight:bold\">var</span> h:Host = <span style=\"color:#080;font-weight:bold\">new</span> Host(<span style=\"background-color:hsla(0,100%,50%,0.05)\"><span style=\"color:#710\">\"</span><span style=\"color:#D20\">0.0.0.0</span><span style=\"color:#710\">\"</span></span>);\n\n<span style=\"color:#777\">// Клиентский и серверный сокеты.</span>\n<span style=\"color:#080;font-weight:bold\">var</span> c:Socket;\n<span style=\"color:#080;font-weight:bold\">var</span> s:Socket = <span style=\"color:#080;font-weight:bold\">new</span> Socket();\n\n<span style=\"color:#777\">// Привяжем серверный сокет на 9000 порт, и переведём</span>\n<span style=\"color:#777\">// в состояние ожидания подключений.</span>\ns.bind(h, <span style=\"color:#00D\">9000</span>);\ns.listen(<span style=\"color:#00D\">1</span>);\n\n<span style=\"color:#777\">// Ожидаем входящее соединение. Блокируем выполнение.</span>\nc = s.accept();\n\n<span style=\"color:#777\">// Отправим сообщение подключившемуся клиенту</span>\nc.output.writeString(<span style=\"background-color:hsla(0,100%,50%,0.05)\"><span style=\"color:#710\">\"</span><span style=\"color:#D20\">hello world</span><span style=\"color:#710\">\"</span></span>);</pre>\n\n<p>Протестируем работу сети. Запустим <em>telnet</em>. В <em>windows</em> это выглядит так:</p>\n\n<ul>\n<li>Пуск -&gt; Выполнить</li>\n<li><em>telnet</em></li>\n<li>Устанавливаем соединение выполнив: <code>open 127.0.0.1 9000</code>\n</li>\n</ul>\n<p>В окне <em>telnet</em> должны получить ответ с сервера:</p>\n\n<pre><code>hello world\n</code></pre>\n\n<p>Теперь получение сообщения с клиента:</p>\n\n<pre><span style=\"color:#080;font-weight:bold\">while</span> (<span style=\"color:#069\">true</span>) {\n  <span style=\"color:#777\">// Ждём данных.</span>\n  c.waitForRead();\n\n  <span style=\"color:#777\">// Какие-то данные пришли. Читаем строку.</span>\n  <span style=\"color:#080;font-weight:bold\">var</span> read:String = c.input.readLine();\n\n  <span style=\"color:#777\">// Выводим строку в лог.</span>\n  Lib.trace(read);\n\n  <span style=\"color:#777\">// Если это `q`, то выходим.</span>\n  <span style=\"color:#080;font-weight:bold\">if</span> (read == <span style=\"background-color:hsla(0,100%,50%,0.05)\"><span style=\"color:#710\">\"</span><span style=\"color:#D20\">q</span><span style=\"color:#710\">\"</span></span>) <span style=\"color:#080;font-weight:bold\">return</span>;\n}</pre>\n\n<p>Как видно, использовать сокеты в <em>haxe</em> очень даже просто. О том как подключится из <em>flash</em>-клиента я расскажу в следующей статье.</p>"], ["date", Sat, 03 Nov 2012], ["permalink", "haxe-socket-server"], ["title", "Haxe Socket Server"]]
+  [1m[36m (160.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blog_articles" ("article_id") VALUES (?)[0m  [["article_id", 109]]
+  [1m[35m (188.4ms)[0m  commit transaction
+  Rendered admin/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 5667ms (Views: 20.1ms | ActiveRecord: 3911.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 21:39:28 +0800
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 21:39:28 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:29 +0800
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/admin/images/favicon.ico" for 127.0.0.1 at 2012-11-04 21:39:30 +0800
+
+ActionController::RoutingError (No route matches [GET] "/admin/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Processing by HomeController#index as HTML
+  [1m[36mBlogArticle Load (0.1ms)[0m  [1mSELECT "blog_articles".* FROM "blog_articles" [0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" IN (103, 105, 106, 107, 108, 109)
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 103[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 109
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 108[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 106
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 107[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 105
+  Rendered articles/_article.html.haml (11.3ms)
+  Rendered home/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /article.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/glyphicons-halflings.png" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+Served asset /twitter/bootstrap/glyphicons-halflings.png - 200 OK (0ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2012-11-04 21:39:32 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-05 01:43:11 +0800
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  [1m[36mBlogArticle Load (0.1ms)[0m  [1mSELECT "blog_articles".* FROM "blog_articles" [0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" IN (103, 105, 106, 107, 108, 109)
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 103[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 109
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 108[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 106
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 107[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "project_articles" ON "projects"."id" = "project_articles"."project_id" WHERE "project_articles"."article_id" = 105
+  Rendered articles/_article.html.haml (98.5ms)
+  Rendered home/index.html.haml within layouts/application (102.5ms)
+Compiled application.js  (3ms)  (pid 1506)
+Completed 200 OK in 385ms (Views: 249.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-05 01:43:12 +0800
+Served asset /application.css - 200 OK (32ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /home.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /application.js - 200 OK (16ms)
+
+
+Started GET "/assets/twitter/bootstrap/glyphicons-halflings.png" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /twitter/bootstrap/glyphicons-halflings.png - 200 OK (9ms)
+
+
+Started GET "/assets/article.js?body=1" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+Served asset /article.js - 304 Not Modified (1ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2012-11-05 01:43:13 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/italchemist/.gem/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
