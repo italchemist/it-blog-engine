@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pro",
+				"process_article"
+			],
+			[
 				"reo",
 				"resources"
 			],
@@ -22,10 +26,6 @@
 			[
 				"Artic",
 				"article"
-			],
-			[
-				"pro",
-				"project"
 			],
 			[
 				"project",
@@ -88,37 +88,49 @@
 	},
 	"file_history":
 	[
+		"/home/italchemist/Projects/it-blog-engine/app/logics/article_logics.rb",
+		"/home/italchemist/Blog/it-blog-engine-1-article-markup.article",
+		"/home/italchemist/Projects/it-blog-engine/app/logics/update_logics.rb",
+		"/home/italchemist/Projects/it-blog-engine/app/logics/markdown_logics.rb",
+		"/home/italchemist/Projects/it-blog-engine/app/models/article_definition.rb",
+		"/home/italchemist/Projects/it-blog-engine/app/logics/project_logics.rb",
+		"/home/italchemist/Blog/haxe-flash-socket-client.article",
+		"/home/italchemist/Blog/haxe-socket-server.article",
+		"/home/italchemist/Blog/it-blog-engine-idea.article",
+		"/home/italchemist/Blog/it-blog-engine.project",
+		"/home/italchemist/Blog/hello-world.article",
+		"/home/italchemist/Projects/it-blog-engine/app/views/layouts/application.html.haml",
+		"/home/italchemist/Projects/it-blog-engine/app/assets/javascripts/application.js",
+		"/home/italchemist/Blog/archlinux-mutt-getmail-msmtp.article",
+		"/home/italchemist/Projects/it-blog-engine/app/views/articles/show.html.haml",
+		"/home/italchemist/Blog/it-blog-engine-0-overview.article",
+		"/home/italchemist/Blog/zsh-configuration.article",
+		"/home/italchemist/Projects/zshrc/.functions.sh",
+		"/home/italchemist/Blog/it-blog-engine-0-intro.article",
+		"/home/italchemist/Projects/it-blog-engine/app/assets/stylesheets/home.css.scss",
+		"/home/italchemist/Projects/it-blog-engine/app/models/project.rb",
+		"/home/italchemist/Projects/it-blog-engine/app/views/projects/_project.html.haml",
+		"/home/italchemist/Projects/it-blog-engine/app/models/article.rb",
+		"/home/italchemist/Projects/it-blog-engine/app/views/articles/_article.html.haml",
+		"/home/italchemist/Projects/it-blog-engine/app/controllers/projects_controller.rb",
+		"/home/italchemist/Projects/it-blog-engine/app/views/projects/index.html.haml",
+		"/home/italchemist/Projects/it-blog-engine/app/views/projects/show.html.haml",
+		"/home/italchemist/Projects/it-blog-engine/db/migrate/20121031121401_create_articles.rb",
+		"/home/italchemist/Projects/it-blog-engine/app/models/project_definition.rb",
 		"/home/italchemist/Projects/it-blog-engine/app/models/blog_article.rb",
 		"/home/italchemist/Projects/it-blog-engine/db/migrate/20121102085311_create_blog_articles.rb",
-		"/home/italchemist/Projects/it-blog-engine/app/logics/update_logics.rb",
-		"/home/italchemist/Projects/it-blog-engine/app/models/article.rb",
-		"/home/italchemist/Projects/it-blog-engine/app/logics/article_logics.rb",
 		"/home/italchemist/Projects/it-blog-engine/app/controllers/home_controller.rb",
-		"/home/italchemist/Projects/it-blog-engine/app/models/project.rb",
 		"/home/italchemist/Projects/it-blog-engine/app/models/project_article.rb",
 		"/home/italchemist/Projects/it-blog-engine/db/migrate/20121102083929_create_project_articles.rb",
-		"/home/italchemist/Projects/it-blog-engine/app/views/projects/show.html.haml",
 		"/home/italchemist/Projects/it-blog-engine/config/routes.rb",
-		"/home/italchemist/Projects/it-blog-engine/app/views/layouts/application.html.haml",
-		"/home/italchemist/Projects/it-blog-engine/app/models/project_definition.rb",
-		"/home/italchemist/Blog/it-blog-engine-0-intro.article",
-		"/home/italchemist/Blog/it-blog-engine.project",
-		"/home/italchemist/Projects/it-blog-engine/app/logics/project_logics.rb",
 		"/home/italchemist/Projects/teamr/app/models/project_article.rb",
 		"/home/italchemist/Projects/teamr/app/models/project.rb",
 		"/home/italchemist/Projects/it-blog-engine/app/controllers/admin_controller.rb",
 		"/home/italchemist/Projects/it-blog-engine/app/controllers/articles_controller.rb",
-		"/home/italchemist/Projects/it-blog-engine/app/views/projects/index.html.haml",
-		"/home/italchemist/Projects/it-blog-engine/app/controllers/projects_controller.rb",
-		"/home/italchemist/Projects/it-blog-engine/app/models/article_definition.rb",
-		"/home/italchemist/Projects/it-blog-engine/app/views/projects/_project.html.haml",
 		"/home/italchemist/Projects/it-blog-engine/db/migrate/20121102074701_create_projects.rb",
-		"/home/italchemist/Projects/it-blog-engine/db/migrate/20121031121401_create_articles.rb",
 		"/home/italchemist/Projects/it-blog-engine/app/views/article/show.html.haml",
 		"/home/italchemist/Projects/it-blog-engine/app/controllers/article_controller.rb",
 		"/home/italchemist/Projects/it-blog-engine/Gemfile",
-		"/home/italchemist/Projects/it-blog-engine/app/assets/stylesheets/home.css.scss",
-		"/home/italchemist/Projects/it-blog-engine/app/views/articles/_article.html.haml",
 		"/home/italchemist/Projects/teamr/config/routes.rb",
 		"/home/italchemist/Projects/it-blog-engine/app/helpers/article_helper.rb",
 		"/home/italchemist/Projects/it-blog-engine/app/assets/images/rails.png",
@@ -136,7 +148,6 @@
 		"/home/italchemist/Projects/it-blog-engine/app/assets/javascripts/home.js.coffee",
 		"/home/italchemist/Blog/MySublimeConfiguration",
 		"/home/italchemist/Blog/HelloWorld",
-		"/home/italchemist/Projects/it-blog-engine/app/logics/markdown_logics.rb",
 		"/home/italchemist/Projects/it-blog-engine/app/assets/stylesheets/application.css",
 		"/home/italchemist/Projects/_itblog/Gemfile",
 		"/home/italchemist/Projects/_itblog/config/deploy.rb",
@@ -204,18 +215,7 @@
 		"/home/italchemist/Projects/teamr/app/controllers/project/articles_controller.rb",
 		"/home/italchemist/Projects/teamr/app/models/project_member.rb",
 		"/home/italchemist/Projects/teamr/app/views/project/members/index.html.haml",
-		"/home/italchemist/Projects/teamr/app/models/project_members.rb",
-		"/home/italchemist/Projects/teamr/app/models/article.rb",
-		"/home/italchemist/Projects/teamr/db/migrate/20121029095617_create_project_members.rb",
-		"/home/italchemist/Projects/teamr/db/migrate/20121028105622_create_project_articles.rb",
-		"/home/italchemist/Projects/teamr/app/views/project/articles/new.html.haml",
-		"/home/italchemist/Projects/teamr/app/views/project/articles/show.html.haml",
-		"/home/italchemist/Projects/teamr/app/views/project/articles/index.html.haml",
-		"/home/italchemist/Projects/teamr/app/views/project/articles/edit.html.haml",
-		"/home/italchemist/Projects/teamr/app/views/project/articles/_form.html.haml",
-		"/home/italchemist/Projects/teamr/app/views/articles/_form.html.haml",
-		"/home/italchemist/Projects/teamr/app/views/projects/index.html.haml",
-		"/home/italchemist/Projects/teamr/app/views/_project.html.haml"
+		"/home/italchemist/Projects/teamr/app/models/project_members.rb"
 	],
 	"find":
 	{
@@ -223,9 +223,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			"*"
 		]
 	},
 	"find_state":
@@ -233,6 +234,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"exist",
+			";",
+			"puts",
+			") \"",
+			"@content",
+			"find_or",
+			"article",
+			"Article",
+			"article",
+			"Article",
+			"article",
+			"msmtp",
+			"published",
+			"_ывы_\n\n=вывыв=",
+			"published",
+			"def ",
+			"def",
+			"article",
+			"published",
 			"    	.",
 			"name",
 			"project",
@@ -360,6 +380,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"migrat/article",
+				"db/migrate/20121031121401_create_articles.rb"
+			],
 			[
 				"mig/",
 				"db/migrate/20121102085311_create_blog_articles.rb"
