@@ -6,7 +6,7 @@ class MarkdownLogics
     renderer = Redcarpet::Render::HTML.new(
       :filter_html => true)
     markdown = Redcarpet::Markdown.new(renderer,
-      :autolink => true, :space_after_headers => true,
+      :autolink => false, :space_after_headers => true,
       :fenced_code_blocks => true)
     content = markdown.render(text)
 
@@ -19,9 +19,12 @@ class MarkdownLogics
     end
     content = doc.css("body").inner_html
 
+    content = content.gsub(/\[@image:(\S+)\]/) { |m| "<center><img src='/images/#{$1}'/></center>" }
+    content = content.gsub(/\[@link:(\S+)\|(.+)\]/) { |m| "<a href='http://#{$1}'>#{$2}</a>" }
     content = content.gsub(/\[@article:(\S+)\|(.+)\]/) { |m| "<a href='/articles/#{$1}'>#{$2}</a>" }
     content = content.gsub(/\[@project:(\S+)\|(.+)\]/) { |m| "<a href='/projects/#{$1}'>#{$2}</a>" }
     content = content.gsub(/\[@github:(\S+)\|(.+)\]/) { |m| "<a href='http://www.github.com/#{$1}'>#{$2}</a>" }
+    content = content.gsub(/\[@youtube:(\S+)\]/) { |m| "<center><iframe width='853' height='480' src='http://www.youtube.com/embed/#{$1}?rel=0' frameborder='0' allowfullscreen></iframe></center>" }
 
     content
   end

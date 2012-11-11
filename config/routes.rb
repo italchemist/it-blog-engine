@@ -1,6 +1,7 @@
 Itblog::Application.routes.draw do
   resources :projects, :only => [:index, :show]
   resources :articles, :only => [:show]
+  match 'images/*file' => 'images#get'
   match 'admin/update' => 'admin#update'
   root :to => 'home#index'
   

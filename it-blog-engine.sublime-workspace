@@ -63,6 +63,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/home/italchemist/Blog/archlinux-conexatnt-issues",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -88,18 +96,22 @@
 	},
 	"file_history":
 	[
-		"/home/italchemist/Projects/it-blog-engine/app/logics/article_logics.rb",
-		"/home/italchemist/Blog/it-blog-engine-1-article-markup.article",
+		"/home/italchemist/Projects/it-blog-engine/config/locales/en.yml",
+		"/home/italchemist/Projects/it-blog-engine/app/views/layouts/application.html.haml",
+		"/home/italchemist/Blog/haxe-network-engine-overview.article",
+		"/home/italchemist/Blog/haxe-network-engine.project",
+		"/home/italchemist/Blog/it-blog-engine.project",
+		"/home/italchemist/Blog/it-blog-engine-idea.article",
 		"/home/italchemist/Projects/it-blog-engine/app/logics/update_logics.rb",
+		"/home/italchemist/Projects/it-blog-engine/app/logics/article_logics.rb",
+		"/home/italchemist/Blog/it-blog-engine-article-markup.article",
+		"/home/italchemist/Blog/it-blog-engine-1-article-markup.article",
 		"/home/italchemist/Projects/it-blog-engine/app/logics/markdown_logics.rb",
 		"/home/italchemist/Projects/it-blog-engine/app/models/article_definition.rb",
 		"/home/italchemist/Projects/it-blog-engine/app/logics/project_logics.rb",
 		"/home/italchemist/Blog/haxe-flash-socket-client.article",
 		"/home/italchemist/Blog/haxe-socket-server.article",
-		"/home/italchemist/Blog/it-blog-engine-idea.article",
-		"/home/italchemist/Blog/it-blog-engine.project",
 		"/home/italchemist/Blog/hello-world.article",
-		"/home/italchemist/Projects/it-blog-engine/app/views/layouts/application.html.haml",
 		"/home/italchemist/Projects/it-blog-engine/app/assets/javascripts/application.js",
 		"/home/italchemist/Blog/archlinux-mutt-getmail-msmtp.article",
 		"/home/italchemist/Projects/it-blog-engine/app/views/articles/show.html.haml",
@@ -211,11 +223,7 @@
 		"/home/italchemist/Projects/teamr/app/models/member.rb",
 		"/home/italchemist/Projects/teamr/db/development.sqlite3",
 		"/home/italchemist/Projects/teamr/config/environments/development.rb",
-		"/home/italchemist/Projects/teamr/app/logics/act_as_project_controller.rb",
-		"/home/italchemist/Projects/teamr/app/controllers/project/articles_controller.rb",
-		"/home/italchemist/Projects/teamr/app/models/project_member.rb",
-		"/home/italchemist/Projects/teamr/app/views/project/members/index.html.haml",
-		"/home/italchemist/Projects/teamr/app/models/project_members.rb"
+		"/home/italchemist/Projects/teamr/app/logics/act_as_project_controller.rb"
 	],
 	"find":
 	{
@@ -223,7 +231,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"*"
@@ -334,8 +342,35 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/home/italchemist/Blog/archlinux-conexatnt-issues",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

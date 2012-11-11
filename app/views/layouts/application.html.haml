@@ -30,8 +30,8 @@
             = content_for?(:header) ? ":: " + yield(:header) : ""
           .container.nav-collapse
             %ul.nav
-              %li= link_to "Articles", root_path
-              %li= link_to "Projects", projects_path
+              %li= link_to t("menu.articles"), root_path
+              %li= link_to t("menu.projects"), projects_path
 
     .container-fluid
       = yield
